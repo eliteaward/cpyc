@@ -34,7 +34,7 @@
     }
     .container {
       padding: 2em;
-      max-width: 960px;
+      max-width: 1000px;
       margin: auto;
     }
     h2 {
@@ -42,23 +42,40 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1em;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.2em;
     }
     .card {
       background-color: white;
       border: 1px solid #ccc;
-      padding: 1em;
-      border-radius: 8px;
+      padding: 1.3em 1em 1em 1em;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px #0001;
+      font-size: 1.08em;
+    }
+    .power-title {
+      font-size: 1.5em;
+      color: #C09030;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+    }
+    .criteria {
+      margin: 0.4em 0 0 0;
+      padding: 0 0 0 1.2em;
+    }
+    .criteria li {
+      margin-bottom: 0.7em;
+    }
+    .note {
+      color: #555;
+      font-size: 0.93em;
+      margin-top: 0.6em;
     }
     footer {
       text-align: center;
       font-size: 0.9em;
       color: #666;
       padding: 1em;
-    }
-    ul li {
-      margin-bottom: 1em;
     }
   </style>
 </head>
@@ -78,68 +95,84 @@
   <div class="container">
     <section id="about">
       <h2>計畫介紹</h2>
-      <p>《附中菁英獎》旨在鼓勵學生依其優勢領域自導學習深耕，培養具備高階能力與創新潛質之人才，並強化挑戰精神與卓越表現。學生若完成六項能力向度中至少四項，即符合當年度畢業生之得獎資格。</p>
+      <p>
+        《附中菁英獎》旨在鼓勵本校學生依其優勢領域自導學習深耕，並強化其自我挑戰精神與卓越表現，培育具備高階能力與創新潛質之人才。學生須於「品德力」、「實踐力」、「合作力」、「表達力」、「思辨力」、「移動力」六大能力向度中，完成至少四項認證，即可於當年度畢業時取得《附中菁英獎》資格。
+      </p>
     </section>
 
     <section id="skills">
       <h2>六大能力向度</h2>
       <div class="grid">
         <div class="card">
-          <strong style="font-size: 24px; color: #C09030; letter-spacing: 1px;">品德力</strong><br>
-          達成條件（四擇二以上）：<br>
-          ‧ 無警告（含銷過後）<br>
-          ‧ 無曠課紀錄<br>
-          ‧ 捐血活動一次以上<br>
-          ‧ 三次以上校外志工活動
+          <span class="power-title">品德力</span>
+          <div class="note">（以下至少達成兩項，始獲得「品德力」認證）</div>
+          <ol class="criteria">
+            <li>於本校在學期間沒有警告（含）以上處份（含銷過後）<span class="note">〔生輔組認證〕</span></li>
+            <li>於本校在學期間沒有曠課紀錄<span class="note">〔生輔組認證〕</span></li>
+            <li>參與校內外捐血活動一次（含）以上<span class="note">〔衛生組認證〕</span></li>
+            <li>在校外參與三次（含）以上志工服務之活動<span class="note">〔活動組認證〕</span></li>
+          </ol>
         </div>
         <div class="card">
-          <strong style="font-size: 24px; color: #C09030; letter-spacing: 1px;">實踐力</strong><br>
-          達成條件（四擇二以上）：<br>
-          ‧ EWANT課程6門認證<br>
-          ‧ 縣級競賽甲等或乙級技術士證照<br>
-          ‧ 英檢B1以上<br>
-          ‧ 圖書館認證30本以上
+          <span class="power-title">實踐力</span>
+          <div class="note">（以下至少達成兩項，始獲得「實踐力」認證）</div>
+          <ol class="criteria">
+            <li>於 EWANT育網開放教育平臺取得六門（含）以上課程認證<span class="note">〔資媒組認證〕</span></li>
+            <li>參與校外縣級以上競賽，取得甲等（或第三名）之成績／取得各種乙級技術士技能檢定之證照<span class="note">〔各處室認證〕</span></li>
+            <li>通過 CEFR語言能力參考指標 B1以上之英檢證明<span class="note">〔教學組認證〕</span></li>
+            <li>完成圖書館閱讀認證 30本（含）書以上<span class="note">〔讀者服務組認證〕</span></li>
+          </ol>
         </div>
         <div class="card">
-          <strong style="font-size: 24px; color: #C09030; letter-spacing: 1px;">合作力</strong><br>
-          達成條件（三擇二以上）：<br>
-          ‧ 班長/社長/隊長且表現優良<br>
-          ‧ 團體競賽前三名<br>
-          ‧ 模擬聯合國、外交營等活動
+          <span class="power-title">合作力</span>
+          <div class="note">（以下至少達成兩項，始獲得「合作力」認證）</div>
+          <ol class="criteria">
+            <li>曾任班級班長、社團社長或校隊隊長，且領導績效優良者<span class="note">〔學務處認證〕</span></li>
+            <li>代表班級或學校參加各項團隊競賽獲得前三名<span class="note">〔各處室認證〕</span></li>
+            <li>參加模擬聯合國、外交小尖兵及領培營等活動<span class="note">〔各處室認證〕</span></li>
+          </ol>
         </div>
         <div class="card">
-          <strong style="font-size: 24px; color: #C09030; letter-spacing: 1px;">表達力</strong><br>
-          達成條件（四擇二以上）：<br>
-          ‧ 校內自主學習成果發表<br>
-          ‧ 全國/區域歷程發表<br>
-          ‧ 閱讀心得寫作優等以上<br>
-          ‧ 校外表達/媒體/攝影獲獎
+          <span class="power-title">表達力</span>
+          <div class="note">（以下至少達成兩項，始獲得「表達力」認證）</div>
+          <ol class="criteria">
+            <li>經導師認證，於校內自主學習成果平臺發表者<span class="note">〔讀者服務組認證〕</span></li>
+            <li>參與全國或區域級學習歷程發表者<span class="note">〔註冊組認證〕</span></li>
+            <li>獲得全國閱讀心得寫作優等（含）以上<span class="note">〔讀者服務組認證〕</span></li>
+            <li>獲得校外各種行銷表達、媒體運用或攝影比賽獲殊榮者<span class="note">〔活動組認證〕</span></li>
+          </ol>
         </div>
         <div class="card">
-          <strong style="font-size: 24px; color: #C09030; letter-spacing: 1px;">思辨力</strong><br>
-          達成條件（七擇三以上）：<br>
-          ‧ APX數理檢定高級通過<br>
-          ‧ 校內科展優等以上<br>
-          ‧ 得學科能力競賽佳作以上<br>
-          ‧ 學測四科50級分以上或統測五科63級分以上<br>
-          ‧ 探究實作競賽決賽<br>
-          ‧ 小論文甲等以上<br>
-          ‧ APCS程式設計觀念與實作題各3級分以上
+          <span class="power-title">思辨力</span>
+          <div class="note">（以下至少達成三項，始獲得「思辨力」認證）</div>
+          <ol class="criteria">
+            <li>APX數理檢定高級（一科含以上）通過<span class="note">〔設備組認證〕</span></li>
+            <li>獲得校內科展優等以上<span class="note">〔設備組認證〕</span></li>
+            <li>獲得學科能力競賽佳作以上<span class="note">〔設備組認證〕</span></li>
+            <li>學測成績（四科）達50級分以上／統測成績（五科）達63級分以上<span class="note">〔註冊組認證〕</span></li>
+            <li>參加探究實作競賽進入決賽者<span class="note">〔設備組認證〕</span></li>
+            <li>獲得全國小論文比賽甲等（含）以上<span class="note">〔讀者服務組認證〕</span></li>
+            <li>獲得 APCS程式設計觀念題、實作題各3級分以上<span class="note">〔設備組認證〕</span></li>
+          </ol>
         </div>
         <div class="card">
-          <strong style="font-size: 24px; color: #C09030; letter-spacing: 1px;">移動力</strong><br>
-          達成條件（四擇二以上）：<br>
-          ‧ 海外學習/雙聯制修學分2以上<br>
-          ‧ 通過一門以上AP課程認證<br>
-          ‧ 馬拉松或三鐵完賽證明<br>
-          ‧ 走踏新竹3座山並打卡
+          <span class="power-title">移動力</span>
+          <div class="note">（以下至少達成兩項，始獲得「移動力」認證）</div>
+          <ol class="criteria">
+            <li>參與海外各國教育旅行、遊學、壯遊計畫／獲得雙聯學制學分（至少2學分含以上）<span class="note">〔訓育組認證〕</span></li>
+            <li>通過一門以上AP課程認證<span class="note">〔試務組認證〕</span></li>
+            <li>參與國內外馬拉松賽事（五公里以上之組別），取得完賽證明者／參加國內外三鐵賽事（含一場以上）<span class="note">〔體育組認證〕</span></li>
+            <li>走踏新竹縣市任3座山，於入山口（有標註山名）及山頂打卡拍照<span class="note">〔體育組認證〕</span></li>
+          </ol>
         </div>
       </div>
     </section>
 
     <section id="apply">
       <h2>申請方式</h2>
-      <p>學生可至學務處活動組領取認證卡，或於校網下載列印。每學期末可至各認證處室辦理核章認證。最晚須於畢業典禮前一個月完成所有認證，並於畢業15天前繳回教務處教學組。</p>
+      <p>
+        學生可至學務處活動組領取認證卡，或於校網下載列印。每學期末可至各認證處室辦理核章認證。最晚須於畢業當年度畢業典禮前一個月完成所有認證，並於畢業前15天內將認證卡繳回教務處教學組，逾期恕不受理。
+      </p>
     </section>
 
     <section id="faq">
@@ -154,7 +187,10 @@
 
     <section id="download">
       <h2>下載專區</h2>
-      <p><a href="https://www.cpshs.hcc.edu.tw/resource/openfid.php?id=17834">點此下載認證卡（PDF）</a>｜<a href="https://www.cpshs.hcc.edu.tw/resource/openfid.php?id=17836">認證辦法全文</a></p>
+      <p>
+        <a href="https://www.cpshs.hcc.edu.tw/resource/openfid.php?id=17834">點此下載認證卡（PDF）</a>｜
+        <a href="https://www.cpshs.hcc.edu.tw/resource/openfid.php?id=17836">認證辦法全文</a>
+      </p>
     </section>
   </div>
 
